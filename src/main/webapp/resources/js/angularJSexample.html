@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+});
+</script>
+
+<form ng-app="" name="myForm">
+    Email:
+    <input type="email" name="myAddress" ng-model="text">
+    <span ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span>
+</form>
+
+<p>Enter your e-mail address in the input field. AngularJS will display an errormessage if the address is not an e-mail.</p>
+
+
+<form ng-app="" name="myForm" ng-init="myText = 'post@myweb.com'">
+
+Email:
+<input type="email" name="myAddress" ng-model="myText" required>
+<p>Edit the e-mail address, and try to change the status.</p>
+<h1>Status</h1>
+<p>Valid: {{myForm.myAddress.$valid}} (if true, the value meets all criteria).</p>
+<p>Dirty: {{myForm.myAddress.$dirty}} (if true, the value has been changed).</p>
+<p>Touched: {{myForm.myAddress.$touched}} (if true, the field has been in focus).</p>
+
+</form>
+</body>
+</html>

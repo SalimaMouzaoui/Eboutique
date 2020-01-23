@@ -1,0 +1,16 @@
+dz\elit\eboutique\dao\BoutiqueDAOImpl.class
+dz\elit\eboutique\entities\Panier.class
+dz\elit\eboutique\dao\IBoutiqueDAO.class
+dz\elit\eboutique\entities\Commande.class
+dz\elit\eboutique\entities\Produit.class
+dz\elit\eboutique\entities\LigneCommande.class
+dz\elit\eboutique\metier\InternauteBoutiqueMetier.class
+dz\elit\eboutique\Controller\AdminCategoriesController.class
+dz\elit\eboutique\entities\Client.class
+dz\elit\eboutique\entities\Categorie.class
+dz\elit\eboutique\entities\User.class
+dz\elit\eboutique\metier\IAdminProduitsMetier.class
+dz\elit\eboutique\entities\Role.class
+dz\elit\eboutique\metier\BoutiqueMetierImpl.class
+dz\elit\eboutique\Controller\Controlleur.class
+dz\elit\eboutique\metier\IAdminCategoriesMetier.class

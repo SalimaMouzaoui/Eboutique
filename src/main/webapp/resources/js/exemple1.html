@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="myScript.js"></script>
+</head>
+
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attributes.</p>
+
+<p>In this case JavaScript changes the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+<p id="demo1">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Click Me!</button>
+
+<p id="demo2">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('demo2').style.display='none'">Click Me!</button>
+<h2>JavaScript in Head</h2>
+
+<p id="demo3">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script type="text/javascript">window.alert("Attention");</script>
+
+<script type="text/javascript">console.log(5+6)</script>
+
+<script>
+var x;
+x = 6;
+document.getElementById("demo3").innerHTML = x;
+</script>
+
+<p>
+There are two different ways to access an object property: 
+</p>
+<p>You can use person.property or person["property"].</p>
+
+<p id="demo4"></p>
+
+<script>
+var person = {
+    firstName: "John",
+    lastName : "Doe",
+    id       :  5566
+};
+document.getElementById("demo4").innerHTML =
+person.firstName + " " + person.lastName;
+</script>
+
+<p>Please input a number between 5 and 10:</p>
+
+<input id="demo5" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="message"></p>
+
+<script>
+function myFunction() {
+    var message, x;
+    message = document.getElementById("message");
+    message.innerHTML = "";
+    x = document.getElementById("demo5").value;
+    try { 
+        if(x == "") throw "empty";
+        if(isNaN(x)) throw "not a number";
+        x = Number(x);
+        if(x < 5) throw "too low";
+        if(x > 10) throw "too high";
+    }
+    catch(err) {
+        message.innerHTML = "Input is " + err;
+    }
+    finally {
+        document.getElementById("demo5").value = "";
+    }
+}
+</script>
+<p id="demo6"></p>
+
+<script>
+var text = '{"employees":[' +
+'{"firstName":"John", "lastName":"Doe" },' +
+'{"firstName":"Anna", "lastName":"Smith" },' +
+'{"firstName":"Peter", "lastName":"Jones" }]}';
+
+obj = JSON.parse(text);
+document.getElementById("demo6").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
+</script>
+</body>
+</html>
