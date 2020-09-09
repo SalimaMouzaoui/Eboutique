@@ -120,7 +120,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
-            <version>5.2.4.Final</version>
+            <version>5.3.6.Final</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.0-api -->
