@@ -107,7 +107,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>3.6.0.Final</version>
+            <version>5.4.24.Final</version>
         </dependency>
 
         <!-- for JPA, use hibernate-entitymanager instead of hibernate-core
