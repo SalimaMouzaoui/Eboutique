@@ -78,7 +78,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-expression</artifactId>
-            <version>4.3.6.RELEASE</version>
+            <version>5.2.21.RELEASE</version>
         </dependency>
 
         <!-- secutite -->
